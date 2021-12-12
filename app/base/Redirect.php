@@ -25,9 +25,6 @@ class Redirect{
         header("Location: ".$location."");
     }
     
-    public function test(){
-        echo "testre";
-    }
 
     public function view($action,Array $para) {
 
@@ -39,13 +36,13 @@ class Redirect{
             }
     }
     
-    public function Success($message){
-         $_SESSION["success"]=$message;
-    }
-
-    public function Fail($message){
-         $_SESSION["fail"]=$message;
-    }
+//    public function Success($message){
+//         $_SESSION["success"]=$message;
+//    }
+//
+//    public function Fail($message){
+//         $_SESSION["fail"]=$message;
+//    }
 
 
 }

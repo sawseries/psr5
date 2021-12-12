@@ -3,6 +3,8 @@
 namespace MyProject\Base;
 
 use MyProject\Base\eloquent;
+use MyProject\Base\Redirect;
+use MyProject\Base\Controllers;
 
 class BaseController extends eloquent{   
     
@@ -14,6 +16,8 @@ class BaseController extends eloquent{
       if(!empty($resultset))
         return $resultset;
     }
+    
+    
 
     public function numRows($query) {
       $result  = mysqli_query($this->conn,$query);

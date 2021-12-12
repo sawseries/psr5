@@ -1,0 +1,66 @@
+<!doctype html>
+
+<head>
+
+   <!-- player skin -->
+   <link rel="stylesheet" href="skin/skin.css">
+
+   <!-- site specific styling -->
+   <style>
+   body { font: 12px "Myriad Pro", "Lucida Grande", sans-serif; text-align: center; padding-top: 5%; }
+   .flowplayer { width: 80%; }
+
+   .flowplayer {
+  background-color: #033;
+/*  background-image: url(//flowplayer.com/media/img/demos/playful.jpg);*/
+}
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .flowplayer {
+/*    background-image: url(//flowplayer.com/media/img/demos/playful@x2.jpg); */
+  }
+}
+ 
+/* do not display big play/pause button */
+.flowplayer.is-ready .fp-pause,
+.flowplayer.is-ready .fp-play {
+  display: none;
+}
+
+   </style>
+
+   <!-- for video tag based installs flowplayer depends on jQuery 1.7.2+ -->
+   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+   <!-- include flowplayer -->
+   <script src="flowplayer.min.js"></script>
+
+   <script>
+
+flowplayer(function (api, root) {
+ 
+  api.on("ready", function () {
+    // click on player UI (screen) redirects to a different page
+    // after player is loaded
+    $(root).click(function (e) {
+      if ($(e.target).hasClass("fp-ui")) {
+        api.pause();
+        window.open("https://flowplayer.com/docs/", "_blank");
+      }
+    });
+ 
+  });
+ 
+});
+
+
+</script>
+
+</head>
+
+<body>
+
+   <div class="flowplayer fp-playful is-splash" data-ratio="0.4167"> 
+   <video poster="//flowplayer.com/media/img/demos/playful.jpg"><source type="application/x-mpegurl" src="http://vdocdn2.eazystreaming.com:1935/vod/tv.sdp/mp4:thailife_user/1498392484.mp4/playlist.m3u8"></video>
+   </div>
+
+</body>

@@ -1,0 +1,112 @@
+/* Owl Carousel Bootstrap Custom CSS */
+
+
+/* Demo Slides */
+
+.owl-example .item{
+	padding:0;
+	margin: 10px;
+	color: #333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+.owl-example .data-info {
+	margin:0;
+	padding:0 15px 15px 15px;
+	text-align:left;
+}
+
+.owl-example .item img{
+	width: auto;
+	margin: 0 auto;
+	display: block;
+	margin-bottom:10px;
+}
+.owl-example .item h3{
+	 font-family: 'Prompt', sans-serif;
+	font-size: 22px;
+	text-align:left;
+	color:#333333;
+	text-transform: uppercase;
+	margin-bottom:0;
+
+}
+.owl-example .item h4{
+	 font-family: 'Prompt', sans-serif;
+	margin: 5px 0 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	color:#222;
+}
+
+.owl-example .item .subtitle {
+	color:#bbb;
+	font-size:14px;
+	font-weight:normal;
+	padding:3px 0;
+}
+
+.owl-example .item .detail {
+	color:#333;
+	font-size:12px;
+	font-weight:normal;
+	padding:3px 0;
+	height:100px;
+	overflow:hidden;
+}
+
+.owl-example .item .more a {color:#333; text-decoration:none; 	text-transform: uppercase; font-size:12px;}
+.owl-example .item .more a:hover {color:#f7941d; }
+
+
+.item h1{
+	margin: inherit;
+}
+
+.orange{
+	background: #ff8a3c;
+}
+.darkCyan{
+	background: #42bdc2;
+}
+.forestGreen{
+	background: #7fc242;
+}
+.yellow {
+	background: #ffd800;
+}
+.dodgerBlue {
+	background: #388bd1;
+}
+.skyBlue {
+	background: #a1def8;
+}
+.zombieGreen {
+	background: #3fbf79;
+}
+.violet {
+	background: #db6ac5;
+}
+.yellowLight {
+	background: #fee664;
+}
+.steelGray {
+	background: #cad3d0;
+}
+
+.whiteWhite{
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

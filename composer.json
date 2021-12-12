@@ -1,11 +1,22 @@
 {
-    "autoload" : {
-        "psr-4": {
-            "MyProject\\" : "app"
-        }        
-    },
-    "require": {
-        "league/route": "^4.5",
-        "altorouter/altorouter": "^2.0"
+  "name": "wp63/test",
+  "type": "project",
+  "authors": [
+    {
+      "name": "WP63",
+      "email": "me@jirayu.in.th"
     }
+  ],
+  "require": {
+        "baryshev/tree-route": "^2.0"
+    },
+  "autoload": {
+    "files": ["app/helper/helpers.php"],
+    "psr-4": {
+      "MyProject\\" : "app",      
+      "MyProject\\Base\\" : "app/base",
+      "MyProject\\Model\\" : "app/model",
+      "MyProject\\Controller\\" : "app/controller"            
+    }
+  }
 }

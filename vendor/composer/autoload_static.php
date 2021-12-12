@@ -7,61 +7,47 @@ namespace Composer\Autoload;
 class ComposerStaticInite362771cd94dc1e3069a7b4823fd15f7
 {
     public static $files = array (
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '79d1b21dbd27419b256d51983a850f08' => __DIR__ . '/../..' . '/app/helper/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'P' => 
+        'T' => 
         array (
-            'Psr\\Http\\Server\\' => 16,
-            'Psr\\Http\\Message\\' => 17,
-            'Psr\\Container\\' => 14,
+            'TreeRoute\\' => 10,
         ),
         'M' => 
         array (
+            'MyProject\\Model\\' => 16,
+            'MyProject\\Controller\\' => 21,
+            'MyProject\\Base\\' => 15,
             'MyProject\\' => 10,
-        ),
-        'L' => 
-        array (
-            'League\\Route\\' => 13,
-        ),
-        'F' => 
-        array (
-            'FastRoute\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Psr\\Http\\Server\\' => 
+        'TreeRoute\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
-            1 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
+            0 => __DIR__ . '/..' . '/baryshev/tree-route/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'MyProject\\Model\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/../..' . '/app/model',
         ),
-        'Psr\\Container\\' => 
+        'MyProject\\Controller\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
+            0 => __DIR__ . '/../..' . '/app/controller',
+        ),
+        'MyProject\\Base\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/base',
         ),
         'MyProject\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
-        'League\\Route\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/route/src',
-        ),
-        'FastRoute\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
-        ),
     );
 
     public static $classMap = array (
-        'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

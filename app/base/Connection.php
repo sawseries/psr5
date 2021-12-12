@@ -6,8 +6,8 @@ class Connection{
     public static $connect = array(
     'host' => 'localhost',
     'user' => 'root',
-    'password' => '',
-    'database' => 'boonchai_imie',   
+    'password' => '1234',
+    'database' => 'tltube',   
     );
     
     
